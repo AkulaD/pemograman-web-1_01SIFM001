@@ -10,253 +10,121 @@
 <body>
     <!-- Navbar -->
     <nav>
-        <ul>
-            <li><img src="/data/img/logo.png" alt="Bangka Belitung Logo">
-                <p>Bangka Belitung</p>
-            </li>
-        </ul>
+        <div class="nav-body">
+            <ul>
+                <li><img src="/data/img/logo.png" alt="Bangka Belitung Logo"></li>
+                <li><p>Bangka Belitung</p></li>
+            </ul>
 
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Header -->
     <header>
-        <h1>Welcome to the Bangka Belitung tourism website</h1>
-        <p>Discover the beauty of <b>Bangka Belitung Islands</b>, Indonesia</p>
-        <button onclick="location.href='#tickets'">Buy Tickets Now</button>
-        <marquee behavior="scroll" direction="left">Welcome to Bangka Belitung Tourism!</marquee>
+        <div class="body-header">
+            <div class="content-header">
+                <h1>Welcome to the Bangka Belitung tourism website</h1>
+                <p>Discover the beauty of <b>Bangka Belitung Islands</b>, Indonesia</p>
+                <button onclick="location.href='#tickets'">Buy Tickets Now</button>
+                <marquee behavior="scroll" direction="left">Welcome to Bangka Belitung Tourism!</marquee>
+            </div>
+
+        </div>
     </header>
 
     <!-- Main -->
     <main>
-        <section>
-            <h2>Beautiful Beaches</h2>
-            <p>Experience the pristine beaches of Bangka Belitung, known for their white sands and crystal-clear waters.</p>
-            <img src="/data/img/beach.jpg" alt="Beach">
-            <p>Whether you want to relax under the sun or engage in water sports, our beaches offer something for everyone.</p>
-        </section>
-        
-        <section>
-            <h2>Cultural Heritage</h2>
-            <p>Explore the rich cultural heritage of Bangka Belitung, from traditional villages to historical landmarks.</p>
-            <img src="/data/img/culture.jpg" alt="Cultural Heritage">
-            <p>Discover local crafts, cuisine, and festivals that showcase the unique identity of the islands.</p>
-        </section>
-        <!-- Tickets -->
-        <section id="tickets">
-            <h2>Buy Tickets</h2>
-            <p>Don't miss the chance to explore the beauty of Bangka Belitung. Purchase your tickets now!</p>
-            <div class="body-ticket">
-                <div class="ticket">
-                    <table border="1">
-                        <tr>
-                            <th>Gambar</th>
-                            <th>Informasi Wisata</th>
-                            <th>Beli Tiket</th>
-                        </tr>
-
-                        <tr>
-                            <form action="#">
-                                <td><img src="data/img/parai.jpg" alt="Pantai Parai Tenggiri" width="150"></td>
-                                <td>
-                                    <input type="hidden" name="name" value="Pantai Parai Tenggiri">
-                                    <h4>Pantai Parai Tenggiri</h4>
-                                    <p>Pantai terkenal di Sungailiat dengan pasir putih dan air jernih.</p>
-                                    <label>Jenis Tiket:</label>
-                                    <select name="ticket_type">
-                                        <option value="standard">Standard - Rp25.000</option>
-                                        <option value="vip">VIP - Rp50.000</option>
-                                    </select>
-                                </td>
-                                <td><button type="submit">Buy Now</button></td>
-                            </form>
-                        </tr>
-
-                        <tr>
-                            <form action="#">
-                                <td><img src="data/img/tanjungtinggi.jpg" alt="Pantai Tanjung Tinggi" width="150"></td>
-                                <td>
-                                    <input type="hidden" name="name" value="Pantai Tanjung Tinggi">
-                                    <h4>Pantai Tanjung Tinggi</h4>
-                                    <p>Terkenal dengan batu granit besar dan lokasi syuting film Laskar Pelangi.</p>
-                                    <label>Jenis Tiket:</label>
-                                    <select name="ticket_type">
-                                        <option value="standard">Standard - Rp20.000</option>
-                                        <option value="vip">VIP - Rp40.000</option>
-                                    </select>
-                                </td>
-                                <td><button type="submit">Buy Now</button></td>
-                            </form>
-                        </tr>
-
-                        <tr>
-                            <form action="#">
-                                <td><img src="data/img/tanjungkelayang.jpg" alt="Pantai Tanjung Kelayang" width="150"></td>
-                                <td>
-                                    <input type="hidden" name="name" value="Pantai Tanjung Kelayang">
-                                    <h4>Pantai Tanjung Kelayang</h4>
-                                    <p>Memiliki batu granit besar dan spot snorkeling yang indah.</p>
-                                    <label>Jenis Tiket:</label>
-                                    <select name="ticket_type">
-                                        <option value="standard">Standard - Rp25.000</option>
-                                        <option value="vip">VIP - Rp45.000</option>
-                                    </select>
-                                </td>
-                                <td><button type="submit">Buy Now</button></td>
-                            </form>
-                        </tr>
-
-                        <tr>
-                            <form action="#">
-                                <td><img src="data/img/tikusemas.jpg" alt="Pantai Tikus Emas" width="150"></td>
-                                <td>
-                                    <input type="hidden" name="name" value="Pantai Tikus Emas">
-                                    <h4>Pantai Tikus Emas</h4>
-                                    <p>Pantai dengan bukit granit dan pemandangan matahari terbenam yang indah.</p>
-                                    <label>Jenis Tiket:</label>
-                                    <select name="ticket_type">
-                                        <option value="standard">Standard - Rp15.000</option>
-                                        <option value="vip">VIP - Rp30.000</option>
-                                    </select>
-                                </td>
-                                <td><button type="submit">Buy Now</button></td>
-                            </form>
-                        </tr>
-
-                        <tr>
-                            <form action="#">
-                                <td><img src="data/img/lengkuas.jpg" alt="Pulau Lengkuas" width="150"></td>
-                                <td>
-                                    <input type="hidden" name="name" value="Pulau Lengkuas">
-                                    <h4>Pulau Lengkuas</h4>
-                                    <p>Pulau kecil dengan mercusuar tua dan air laut sebening kristal.</p>
-                                    <label>Jenis Tiket:</label>
-                                    <select name="ticket_type">
-                                        <option value="standard">Standard - Rp30.000</option>
-                                        <option value="vip">VIP - Rp60.000</option>
-                                    </select>
-                                </td>
-                                <td><button type="submit">Buy Now</button></td>
-                            </form>
-                        </tr>
-
-                        <tr>
-                            <form action="#">
-                                <td><img src="data/img/kaolin.jpg" alt="Danau Kaolin" width="150"></td>
-                                <td>
-                                    <input type="hidden" name="name" value="Danau Kaolin">
-                                    <h4>Danau Kaolin</h4>
-                                    <p>Danau unik berwarna biru muda bekas tambang timah yang jadi ikon wisata Bangka.</p>
-                                    <label>Jenis Tiket:</label>
-                                    <select name="ticket_type">
-                                        <option value="standard">Standard - Rp10.000</option>
-                                        <option value="vip">VIP - Rp20.000</option>
-                                    </select>
-                                </td>
-                                <td><button type="submit">Buy Now</button></td>
-                            </form>
-                        </tr>
-
-                        <tr>
-                            <form action="#">
-                                <td><img src="data/img/penyabong.jpg" alt="Pantai Penyabong" width="150"></td>
-                                <td>
-                                    <input type="hidden" name="name" value="Pantai Penyabong">
-                                    <h4>Pantai Penyabong</h4>
-                                    <p>Pantai dengan gugusan batu granit besar yang menyerupai kapal.</p>
-                                    <label>Jenis Tiket:</label>
-                                    <select name="ticket_type">
-                                        <option value="standard">Standard - Rp15.000</option>
-                                        <option value="vip">VIP - Rp30.000</option>
-                                    </select>
-                                </td>
-                                <td><button type="submit">Buy Now</button></td>
-                            </form>
-                        </tr>
-
-                        <tr>
-                            <form action="#">
-                                <td><img src="data/img/batuberlayar.jpg" alt="Pantai Batu Berlayar" width="150"></td>
-                                <td>
-                                    <input type="hidden" name="name" value="Pantai Batu Berlayar">
-                                    <h4>Pantai Batu Berlayar</h4>
-                                    <p>Pulau kecil yang hanya muncul saat air laut surut dengan batu besar menjulang.</p>
-                                    <label>Jenis Tiket:</label>
-                                    <select name="ticket_type">
-                                        <option value="standard">Standard - Rp20.000</option>
-                                        <option value="vip">VIP - Rp40.000</option>
-                                    </select>
-                                </td>
-                                <td><button type="submit">Buy Now</button></td>
-                            </form>
-                        </tr>
-
-                        <tr>
-                            <form action="#">
-                                <td><img src="data/img/leebong.jpg" alt="Pulau Leebong" width="150"></td>
-                                <td>
-                                    <input type="hidden" name="name" value="Pulau Leebong">
-                                    <h4>Pulau Leebong</h4>
-                                    <p>Pulau pribadi kecil dengan hutan mangrove dan jembatan kayu cantik.</p>
-                                    <label>Jenis Tiket:</label>
-                                    <select name="ticket_type">
-                                        <option value="standard">Standard - Rp40.000</option>
-                                        <option value="vip">VIP - Rp80.000</option>
-                                    </select>
-                                </td>
-                                <td><button type="submit">Buy Now</button></td>
-                            </form>
-                        </tr>
-
-                        <tr>
-                            <form action="#">
-                                <td><img src="data/img/batubedil.jpg" alt="Pantai Batu Bedil" width="150"></td>
-                                <td>
-                                    <input type="hidden" name="name" value="Pantai Batu Bedil">
-                                    <h4>Pantai Batu Bedil</h4>
-                                    <p>Pantai dengan bebatuan unik yang mengeluarkan suara seperti dentuman bedil.</p>
-                                    <label>Jenis Tiket:</label>
-                                    <select name="ticket_type">
-                                        <option value="standard">Standard - Rp15.000</option>
-                                        <option value="vip">VIP - Rp30.000</option>
-                                    </select>
-                                </td>
-                                <td><button type="submit">Buy Now</button></td>
-                            </form>
-                        </tr>
-                    </table>
-                </div>
+        <section class="beach-desc">
+            <div class="left-content-1">
+                <h2>Beautiful Beaches</h2>
+                <p>Experience the pristine beaches of Bangka Belitung, known for their white sands and crystal-clear waters.</p>
+                <br>
+                <p>Whether you want to relax under the sun or engage in water sports, our beaches offer something for everyone.</p>
+            </div>
+            <div class="right-content-1">
+                <img src="/data/img/beach.png" alt="Beach">
             </div>
         </section>
-
-        <section>
-            <article>
-                <h2>Explore Bangka Belitung</h2>
-                <p>Bangka Belitung Islands, located off the southeastern coast of Sumatra, Indonesia, is a stunning archipelago known for its pristine beaches, unique granite rock formations, and rich cultural heritage. The islands offer a perfect blend of natural beauty and cultural experiences, making it an ideal destination for travelers seeking both relaxation and adventure.</p>
-                <p>Visitors can explore beautiful beaches such as Tanjung Tinggi and Parai Tenggiri, snorkel in crystal-clear waters, and visit historical sites that reflect the islands' diverse cultural influences. With its warm hospitality and affordable travel options, Bangka Belitung is a must-visit destination for anyone looking to experience the charm of Indonesia's lesser-known gems.</p>
-            </article>
+        <hr>
+        <section class="cultural-heritage">
+            <div class="left-content-2">
+                <img src="/data/img/culture.png" alt="Cultural Heritage">
+            </div>
+            <div class="right-content-2">
+                <h2>Cultural Heritage</h2>
+                <p>Explore the rich cultural heritage of Bangka Belitung, from traditional villages to historical landmarks.</p>
+                <br>
+                <p>Discover local crafts, cuisine, and festivals that showcase the unique identity of the islands.</p>
+            </div>
         </section>
+        <!-- Best Destinations -->
+        <section id="destinations">
+            <h2>Top Destinations in Bangka Belitung</h2>
+            <p>Discover the stunning beauty, culture, and charm of the Bangka Belitung Islands.</p>
+            <div class="destination-grid">
 
-        <!-- Summary -->
-         <section>
-            <summary>
-                <h2>Why Visit Bangka Belitung?</h2>
-                <ul>
-                    <li>Stunning Beaches: Enjoy white sandy beaches and clear waters.</li>
-                    <li>Rich Culture: Experience local traditions and cuisine.</li>
-                    <li>Affordable Travel: Great value for money destinations.</li>
-                    <li>Diverse Activities: From snorkeling to exploring historical sites.</li>
-                </ul>
+                <div class="destination-card">
+                    <img src="data/img/parai.png" alt="Pantai Parai Tenggiri">
+                    <div class="destination-info">
+                        <h3>Pantai Parai Tenggiri</h3>
+                        <p>Known for its soft white sand and crystal-clear sea, Parai Tenggiri is a perfect spot for swimming and relaxing.</p>
+                        <a href="https://www.google.com/search?q=Pantai+Parai+Tenggiri+Bangka" target="_blank" class="see-more">See More</a>
+                    </div>
+                </div>
 
-                <p>With its breathtaking landscapes and vibrant culture, Bangka Belitung is a must-visit destination for travelers seeking adventure and relaxation.</p>
-                <a href="gallery.html">Explore the Gallery</a>
-            </summary>
-         </section>
+                <div class="destination-card">
+                    <img src="data/img/tanjungtinggi.png" alt="Pantai Tanjung Tinggi">
+                    <div class="destination-info">
+                        <h3>Pantai Tanjung Tinggi</h3>
+                        <p>Famous for its giant granite rocks and as the filming location of *Laskar Pelangi* movie.</p>
+                        <a href="https://www.google.com/search?q=Pantai+Tanjung+Tinggi+Belitung" target="_blank" class="see-more">See More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <img src="data/img/tanjungkelayang.png" alt="Pantai Tanjung Kelayang">
+                    <div class="destination-info">
+                        <h3>Pantai Tanjung Kelayang</h3>
+                        <p>Home to large granite rocks and one of the best snorkeling spots in Belitung.</p>
+                        <a href="https://www.google.com/search?q=Pantai+Tanjung+Kelayang+Belitung" target="_blank" class="see-more">See More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <img src="data/img/lengkuas.png" alt="Pulau Lengkuas">
+                    <div class="destination-info">
+                        <h3>Pulau Lengkuas</h3>
+                        <p>Small island with a historic lighthouse and crystal-clear turquoise waters surrounding it.</p>
+                        <a href="https://www.google.com/search?q=Pulau+Lengkuas+Belitung" target="_blank" class="see-more">See More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <img src="data/img/kaolin.png" alt="Danau Kaolin">
+                    <div class="destination-info">
+                        <h3>Danau Kaolin</h3>
+                        <p>A surreal turquoise lake formed from an old tin mine — one of Bangka’s iconic landmarks.</p>
+                        <a href="https://www.google.com/search?q=Danau+Kaolin+Bangka" target="_blank" class="see-more">See More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <img src="data/img/leebong.png" alt="Pulau Leebong">
+                    <div class="destination-info">
+                        <h3>Pulau Leebong</h3>
+                        <p>Private island paradise featuring mangrove forests, wooden bridges, and peaceful beaches.</p>
+                        <a href="https://www.google.com/search?q=Pulau+Leebong+Belitung" target="_blank" class="see-more">See More</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
