@@ -1,0 +1,87 @@
+.video-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.video-section h1 {
+    font-size: 32px;
+    color: #0d76ff;
+    margin-bottom: 20px;
+}
+
+.video-gallery {
+    display: flex;
+    justify-content: center;
+}
+
+.video-item {
+    width: 800px;
+}
+
+.video-item video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.video-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.music-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.music-section h3 {
+    font-size: 24px;
+    color: #0d76ff;
+    margin-bottom: 15px;
+}
+
+.music-body audio {
+    width: 400px;
+    border-radius: 5px;
+}
+
+.gallery-section {
+    text-align: center;
+
+}
+
+.gallery-section h3 {
+    font-size: 28px;
+    color: #0d76ff;
+    margin-bottom: 25px;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.photo-item {
+    text-align: center;
+}
+
+.photo-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.photo-item img:hover {
+    transform: scale(1.05);
+}
+
+.photo-item p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}
